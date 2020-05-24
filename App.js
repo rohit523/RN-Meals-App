@@ -13,6 +13,17 @@ const fetchfonts = () => {
 };
 
 export default function App() {
+  const [fontLoaded, setFontLoaded] = useState(false);
+
+  if(!fontLoaded) {
+    return(
+      <AppLoading 
+        startAsync={fetchfonts} 
+        onFinish={() => setFontLoaded(true)} 
+      />
+    );
+  }
+
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
