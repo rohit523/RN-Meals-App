@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, FlatList, TouchableOpacity, Platform } from 'react-native';
 
 import { CATEGORIES } from '../data/dummy-data';
+import Colors from '../constants/Colors';
 
 const CategoriesScreen = props => {
 
@@ -31,8 +32,9 @@ CategoriesScreen.navigationOptions = navData => {
     return {
       headerTitle: 'Riveting Indian Cuisines',
       headerStyle: {
-        //   backgroundColor: 
-      }
+          backgroundColor: Platform.OS === 'android' ? Colors.primaryColor : ''
+      },
+      headerTintColor: Platform.OS === 'android' ? 'white' : Colors.primaryColor
     };
   };
 
