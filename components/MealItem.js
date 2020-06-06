@@ -27,10 +27,12 @@ const MealItem = props => {
 const styles = StyleSheet.create({
     mealItem: {
         height: 200,
-        width: '100%',
+        width: '95%',
         backgroundColor: '#f5f5f5',
         borderRadius: 10,
-        overflow: 'hidden'
+        overflow: 'hidden',
+        marginVertical: 10,
+        marginHorizontal: 10,
     },
     bgImage: {
         width: '100%',
