@@ -24,7 +24,7 @@ class Meal {
         this.complexity = complexity;
         this.affordability = affordability;
         this.isGlutenFree = isGlutenFree;
-        this.isVegan - isVegan;
+        this.isVegan = isVegan;
         this.isVegetarian = isVegetarian;
         this.isLactoseFree = isLactoseFree;
     }
